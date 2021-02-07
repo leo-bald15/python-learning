@@ -1,4 +1,4 @@
-name = 'bob'
+name = 'alex'
 if name == 'alice':
     print('hi alice')
 else:

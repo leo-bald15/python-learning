@@ -1,5 +1,5 @@
 #this is a guess the number game.
-import random
+import random #random comment
 print('Hello, what is your name?')
 name = input()
 secretNumber = random.randint(1,20)

@@ -5,5 +5,5 @@ count = {} #will contain a key value of each char in message, value of total occ
 for character in message.upper(): #goes through each char
     count.setdefault(character,0)
     count[character] = count[character] + 1
-text = pprint.pformat(count)#pretty print module
-print(text)
+testvar = pprint.pformat(count)#pretty print module
+print(testvar)

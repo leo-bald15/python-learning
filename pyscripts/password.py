@@ -1,7 +1,6 @@
-password = 'python0720'
-attempts = 0
+password = 'password123'
 
-while attempts < 3: #checks number of password attempts
+'''while attempts < 3: #checks number of password attempts
     print("please type in your password")
     psw = input()
     if psw == password: #checks if input matches correct password
@@ -15,5 +14,18 @@ if attempts >= 3: #if attempts are = 3 then quits
     print('Too many failed attempts')
 else: #access granted if password matches after while loop ends
     print('Access Granted')
+'''
 
+#attempting for loop
 
+for attempts in range(1,4):
+    pwd = input('Type in your password: ')
+    if pwd == password:
+        break
+    else:
+        print('Nope. Try again.')
+        
+if attempts < 3:
+    print('Access granted.')
+else:
+    print('You forgot your password.')

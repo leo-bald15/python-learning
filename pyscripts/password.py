@@ -23,7 +23,7 @@ for attempts in range(1,4):
     if pwd == password:
         break
     else:
-        print('Nope. Try again.')
+        print('Nope.')
         
 if attempts < 3:
     print('Access granted.')

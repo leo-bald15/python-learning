@@ -18,14 +18,19 @@ else: #access granted if password matches after while loop ends
 
 #attempting for loop
 
-for attempts in range(1,4):
+failed = False
+for attempts in range(0,3):
     pwd = input('Type in your password: ')
     if pwd == password:
+        break
+    elif attempts == 2:
+        attempts += attempts
+        failed = True
         break
     else:
         print('Nope.')
         
-if attempts < 3:
-    print('Access granted.')
+if failed == False:
+    print('Access granted. Failed attempts: '+ str(attempts))
 else:
     print('You forgot your password.')
